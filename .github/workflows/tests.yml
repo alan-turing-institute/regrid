@@ -13,5 +13,5 @@ jobs:
         with:
           environment-file: environment.yml
           cache-environment: true
-      - run: PYTHONPATH=. python -m unittest discover tests
+      - run: python -m unittest discover tests
         shell: micromamba-shell {0}
